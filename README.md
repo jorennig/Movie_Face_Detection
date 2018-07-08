@@ -33,4 +33,4 @@ o	lower = bottom 40%
 Transform_Visualize.m\
 Shows all fixations per movie stimulus for each subject.\
 Finds all frames that were shown during a fixation time, adjusts their position relative to average frame, centers the data and visualizes individual transfomed fixations per movie.\
-Summarizes transformed/normalized viewing behavior across movies per run/subject.\
+Summarizes transformed/normalized viewing behavior across movies per run/subject and plots fixations and heat maps.
