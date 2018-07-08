@@ -1,4 +1,4 @@
-# Movie_Face_Detection
+### Movie_Face_Detection
 Detects faces in videos, creates faces ROIs per frame, corrects outliers, summarizes data over movie in variables and heat maps
 
 feature_detector_test.m\
@@ -21,17 +21,16 @@ EyeMovement_Processing.m\
 •	ascii ET data --> list of fixations with x, y, duration, start, end time
 •	save as Movie_Fixes.mat
 
-Fixation_Processing.m\
+ROI_Processing_Movie.m\
 •	loads in Movie_Fixes.mat & (VideoName).mat
 •	for each fix, for each frame: is it on the face or not? is it up or lower?
-o	upper = top 65% of box
-o	lower = bottom 35%
+o	upper = top 60% of box
+o	lower = bottom 40%
 •	average all frames during fix to get percent time that fix was on the face
 •	weight to get where they were looking for entire movie, based on length of each fix
 •	save as: MovieFixes_ROI_Tab.mat
 
-ROI_Processing_Movie.m\
-asdfa
-
 Transform_Visualize.m\
-asdf
+Shows all fixations per movie stimulus for each subject.\
+Finds all frames that were shown during a fixation time, adjusts their position relative to average frame, centers the data and visualizes individual transfomed fixations per movie.\
+Summarizes transformed/normalized viewing behavior across movies per run/subject.\
